@@ -1,0 +1,6 @@
+framework module Pods_EscapePassTests {
+  umbrella header "Pods-EscapePassTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

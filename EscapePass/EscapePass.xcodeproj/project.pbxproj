@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062D4F2CC3CD9E5EC0F79D79 /* Pods_EscapePassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9558055DA8B5A32045C202B6 /* Pods_EscapePassUITests.framework */; };
+		1A042A572226736E00F00008 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A042A562226736E00F00008 /* UserProfileViewController.swift */; };
+		1A042A592226813900F00008 /* ChangeUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A042A582226813900F00008 /* ChangeUserInfoViewController.swift */; };
+		1A8216D422115E0E00FA0119 /* ChangeLocationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8216D322115E0E00FA0119 /* ChangeLocationPopUpViewController.swift */; };
+		1A9E2D9B224343DE0057BDD1 /* AddNewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E2D9A224343DE0057BDD1 /* AddNewPlayerViewController.swift */; };
+		1A9E2D9D2248AB170057BDD1 /* UserEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E2D9C2248AB170057BDD1 /* UserEventViewController.swift */; };
+		1A9E2D9F2249B3520057BDD1 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E2D9E2249B3520057BDD1 /* EventDetailViewController.swift */; };
+		1AA93F662212128C009C642C /* RoomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA93F652212128C009C642C /* RoomDetailsViewController.swift */; };
+		1AC04E612212A0E1004D0BB3 /* RoomDetailPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC04E602212A0E1004D0BB3 /* RoomDetailPopUpViewController.swift */; };
+		1AEF8D00220FC7BF00A27F74 /* LocationPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8CFF220FC7BF00A27F74 /* LocationPopUpViewController.swift */; };
+		1AFF87682240AD2200D25B5D /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF87672240AD2200D25B5D /* AddEventViewController.swift */; };
+		41C97C15AAFE27983ACDCB26 /* Pods_EscapePassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DB1F2D6534636143D4E8A2 /* Pods_EscapePassTests.framework */; };
+		7639A8EB22094A4B005A6E1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7639A8EA22094A4B005A6E1B /* GoogleService-Info.plist */; };
+		7639A8EF220959E8005A6E1B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639A8EE220959E8005A6E1B /* SignInVC.swift */; };
+		7666B49B2203DACC00885FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B49A2203DACC00885FE1 /* AppDelegate.swift */; };
+		7666B49D2203DACC00885FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B49C2203DACC00885FE1 /* ViewController.swift */; };
+		7666B4A02203DACC00885FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B49E2203DACC00885FE1 /* Main.storyboard */; };
+		7666B4A22203DACE00885FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7666B4A12203DACE00885FE1 /* Assets.xcassets */; };
+		7666B4A52203DACE00885FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7666B4A32203DACE00885FE1 /* LaunchScreen.storyboard */; };
+		7666B4B02203DACF00885FE1 /* EscapePassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B4AF2203DACF00885FE1 /* EscapePassTests.swift */; };
+		7666B4BB2203DACF00885FE1 /* EscapePassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666B4BA2203DACF00885FE1 /* EscapePassUITests.swift */; };
+		F7066B85427AA294BC3C5016 /* Pods_EscapePass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A02E1D8AA33C46D0FC22D1 /* Pods_EscapePass.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7666B4AC2203DACF00885FE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7666B48F2203DACC00885FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7666B4962203DACC00885FE1;
+			remoteInfo = EscapePass;
+		};
+		7666B4B72203DACF00885FE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7666B48F2203DACC00885FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7666B4962203DACC00885FE1;
+			remoteInfo = EscapePass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A042A562226736E00F00008 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		1A042A582226813900F00008 /* ChangeUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUserInfoViewController.swift; sourceTree = "<group>"; };
+		1A8216D322115E0E00FA0119 /* ChangeLocationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLocationPopUpViewController.swift; sourceTree = "<group>"; };
+		1A9E2D9A224343DE0057BDD1 /* AddNewPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlayerViewController.swift; sourceTree = "<group>"; };
+		1A9E2D9C2248AB170057BDD1 /* UserEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEventViewController.swift; sourceTree = "<group>"; };
+		1A9E2D9E2249B3520057BDD1 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		1AA93F652212128C009C642C /* RoomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewController.swift; sourceTree = "<group>"; };
+		1AC04E602212A0E1004D0BB3 /* RoomDetailPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailPopUpViewController.swift; sourceTree = "<group>"; };
+		1AEF8CFF220FC7BF00A27F74 /* LocationPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPopUpViewController.swift; sourceTree = "<group>"; };
+		1AFF87672240AD2200D25B5D /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		3BA63DD759846833969B27F1 /* Pods-EscapePass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscapePass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EscapePass/Pods-EscapePass.debug.xcconfig"; sourceTree = "<group>"; };
+		4FB3170BF0CAFD8A2AA8EF65 /* Pods-EscapePassTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscapePassTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EscapePassTests/Pods-EscapePassTests.release.xcconfig"; sourceTree = "<group>"; };
+		58DB1F2D6534636143D4E8A2 /* Pods_EscapePassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscapePassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A1CEA6DCCBBBB9675A8AB2 /* Pods-EscapePass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscapePass.release.xcconfig"; path = "Pods/Target Support Files/Pods-EscapePass/Pods-EscapePass.release.xcconfig"; sourceTree = "<group>"; };
+		68032717D3BA5F9775C3E0C9 /* Pods-EscapePassUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscapePassUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EscapePassUITests/Pods-EscapePassUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7639A8EA22094A4B005A6E1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7639A8EE220959E8005A6E1B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		7666B4972203DACC00885FE1 /* EscapePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EscapePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7666B49A2203DACC00885FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7666B49C2203DACC00885FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7666B49F2203DACC00885FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7666B4A12203DACE00885FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7666B4A42203DACE00885FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7666B4A62203DACE00885FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7666B4AB2203DACF00885FE1 /* EscapePassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscapePassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7666B4AF2203DACF00885FE1 /* EscapePassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapePassTests.swift; sourceTree = "<group>"; };
+		7666B4B12203DACF00885FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7666B4B62203DACF00885FE1 /* EscapePassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EscapePassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7666B4BA2203DACF00885FE1 /* EscapePassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapePassUITests.swift; sourceTree = "<group>"; };
+		7666B4BC2203DACF00885FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A02E1D8AA33C46D0FC22D1 /* Pods_EscapePass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscapePass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9558055DA8B5A32045C202B6 /* Pods_EscapePassUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EscapePassUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03683E8815C5D56F59689F3 /* Pods-EscapePassTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscapePassTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EscapePassTests/Pods-EscapePassTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A64758A1C5523FF39823765F /* Pods-EscapePassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EscapePassUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EscapePassUITests/Pods-EscapePassUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7666B4942203DACC00885FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7066B85427AA294BC3C5016 /* Pods_EscapePass.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7666B4A82203DACF00885FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C97C15AAFE27983ACDCB26 /* Pods_EscapePassTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7666B4B32203DACF00885FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062D4F2CC3CD9E5EC0F79D79 /* Pods_EscapePassUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7666B48E2203DACC00885FE1 = {
+			isa = PBXGroup;
+			children = (
+				7666B4992203DACC00885FE1 /* EscapePass */,
+				7666B4AE2203DACF00885FE1 /* EscapePassTests */,
+				7666B4B92203DACF00885FE1 /* EscapePassUITests */,
+				7666B4982203DACC00885FE1 /* Products */,
+				AD7C4424F23DF5D8F6FE2E8C /* Pods */,
+				D904CC339194A16A2A57CDE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7666B4982203DACC00885FE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7666B4972203DACC00885FE1 /* EscapePass.app */,
+				7666B4AB2203DACF00885FE1 /* EscapePassTests.xctest */,
+				7666B4B62203DACF00885FE1 /* EscapePassUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7666B4992203DACC00885FE1 /* EscapePass */ = {
+			isa = PBXGroup;
+			children = (
+				7666B49A2203DACC00885FE1 /* AppDelegate.swift */,
+				7666B49C2203DACC00885FE1 /* ViewController.swift */,
+				7666B49E2203DACC00885FE1 /* Main.storyboard */,
+				1AEF8CFF220FC7BF00A27F74 /* LocationPopUpViewController.swift */,
+				7666B4A12203DACE00885FE1 /* Assets.xcassets */,
+				7639A8EA22094A4B005A6E1B /* GoogleService-Info.plist */,
+				7666B4A32203DACE00885FE1 /* LaunchScreen.storyboard */,
+				7666B4A62203DACE00885FE1 /* Info.plist */,
+				7639A8EE220959E8005A6E1B /* SignInVC.swift */,
+				1A8216D322115E0E00FA0119 /* ChangeLocationPopUpViewController.swift */,
+				1AA93F652212128C009C642C /* RoomDetailsViewController.swift */,
+				1AC04E602212A0E1004D0BB3 /* RoomDetailPopUpViewController.swift */,
+				1A042A562226736E00F00008 /* UserProfileViewController.swift */,
+				1A042A582226813900F00008 /* ChangeUserInfoViewController.swift */,
+				1AFF87672240AD2200D25B5D /* AddEventViewController.swift */,
+				1A9E2D9A224343DE0057BDD1 /* AddNewPlayerViewController.swift */,
+				1A9E2D9C2248AB170057BDD1 /* UserEventViewController.swift */,
+				1A9E2D9E2249B3520057BDD1 /* EventDetailViewController.swift */,
+			);
+			path = EscapePass;
+			sourceTree = "<group>";
+		};
+		7666B4AE2203DACF00885FE1 /* EscapePassTests */ = {
+			isa = PBXGroup;
+			children = (
+				7666B4AF2203DACF00885FE1 /* EscapePassTests.swift */,
+				7666B4B12203DACF00885FE1 /* Info.plist */,
+			);
+			path = EscapePassTests;
+			sourceTree = "<group>";
+		};
+		7666B4B92203DACF00885FE1 /* EscapePassUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7666B4BA2203DACF00885FE1 /* EscapePassUITests.swift */,
+				7666B4BC2203DACF00885FE1 /* Info.plist */,
+			);
+			path = EscapePassUITests;
+			sourceTree = "<group>";
+		};
+		AD7C4424F23DF5D8F6FE2E8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BA63DD759846833969B27F1 /* Pods-EscapePass.debug.xcconfig */,
+				62A1CEA6DCCBBBB9675A8AB2 /* Pods-EscapePass.release.xcconfig */,
+				A03683E8815C5D56F59689F3 /* Pods-EscapePassTests.debug.xcconfig */,
+				4FB3170BF0CAFD8A2AA8EF65 /* Pods-EscapePassTests.release.xcconfig */,
+				68032717D3BA5F9775C3E0C9 /* Pods-EscapePassUITests.debug.xcconfig */,
+				A64758A1C5523FF39823765F /* Pods-EscapePassUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D904CC339194A16A2A57CDE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85A02E1D8AA33C46D0FC22D1 /* Pods_EscapePass.framework */,
+				58DB1F2D6534636143D4E8A2 /* Pods_EscapePassTests.framework */,
+				9558055DA8B5A32045C202B6 /* Pods_EscapePassUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7666B4962203DACC00885FE1 /* EscapePass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7666B4BF2203DACF00885FE1 /* Build configuration list for PBXNativeTarget "EscapePass" */;
+			buildPhases = (
+				A9EBCD17014A45626989506A /* [CP] Check Pods Manifest.lock */,
+				7666B4932203DACC00885FE1 /* Sources */,
+				7666B4942203DACC00885FE1 /* Frameworks */,
+				7666B4952203DACC00885FE1 /* Resources */,
+				D17215CFD813125645318BCD /* [CP] Embed Pods Frameworks */,
+				33455EF6DEE873E8443331F8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EscapePass;
+			productName = EscapePass;
+			productReference = 7666B4972203DACC00885FE1 /* EscapePass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7666B4AA2203DACF00885FE1 /* EscapePassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7666B4C22203DACF00885FE1 /* Build configuration list for PBXNativeTarget "EscapePassTests" */;
+			buildPhases = (
+				2EFCCFF0F906CC8F54095401 /* [CP] Check Pods Manifest.lock */,
+				7666B4A72203DACF00885FE1 /* Sources */,
+				7666B4A82203DACF00885FE1 /* Frameworks */,
+				7666B4A92203DACF00885FE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7666B4AD2203DACF00885FE1 /* PBXTargetDependency */,
+			);
+			name = EscapePassTests;
+			productName = EscapePassTests;
+			productReference = 7666B4AB2203DACF00885FE1 /* EscapePassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7666B4B52203DACF00885FE1 /* EscapePassUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7666B4C52203DACF00885FE1 /* Build configuration list for PBXNativeTarget "EscapePassUITests" */;
+			buildPhases = (
+				97976753CF14B46954A9E87D /* [CP] Check Pods Manifest.lock */,
+				7666B4B22203DACF00885FE1 /* Sources */,
+				7666B4B32203DACF00885FE1 /* Frameworks */,
+				7666B4B42203DACF00885FE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7666B4B82203DACF00885FE1 /* PBXTargetDependency */,
+			);
+			name = EscapePassUITests;
+			productName = EscapePassUITests;
+			productReference = 7666B4B62203DACF00885FE1 /* EscapePassUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7666B48F2203DACC00885FE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Anup Sankarraman";
+				TargetAttributes = {
+					7666B4962203DACC00885FE1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7666B4AA2203DACF00885FE1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7666B4962203DACC00885FE1;
+					};
+					7666B4B52203DACF00885FE1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7666B4962203DACC00885FE1;
+					};
+				};
+			};
+			buildConfigurationList = 7666B4922203DACC00885FE1 /* Build configuration list for PBXProject "EscapePass" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7666B48E2203DACC00885FE1;
+			productRefGroup = 7666B4982203DACC00885FE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7666B4962203DACC00885FE1 /* EscapePass */,
+				7666B4AA2203DACF00885FE1 /* EscapePassTests */,
+				7666B4B52203DACF00885FE1 /* EscapePassUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7666B4952203DACC00885FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7666B4A52203DACE00885FE1 /* LaunchScreen.storyboard in Resources */,
+				7639A8EB22094A4B005A6E1B /* GoogleService-Info.plist in Resources */,
+				7666B4A22203DACE00885FE1 /* Assets.xcassets in Resources */,
+				7666B4A02203DACC00885FE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7666B4A92203DACF00885FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7666B4B42203DACF00885FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EFCCFF0F906CC8F54095401 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscapePassTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33455EF6DEE873E8443331F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EscapePass/Pods-EscapePass-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EscapePass/Pods-EscapePass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97976753CF14B46954A9E87D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscapePassUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9EBCD17014A45626989506A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EscapePass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D17215CFD813125645318BCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EscapePass/Pods-EscapePass-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EscapePass/Pods-EscapePass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7666B4932203DACC00885FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEF8D00220FC7BF00A27F74 /* LocationPopUpViewController.swift in Sources */,
+				1AFF87682240AD2200D25B5D /* AddEventViewController.swift in Sources */,
+				1A042A572226736E00F00008 /* UserProfileViewController.swift in Sources */,
+				1A9E2D9F2249B3520057BDD1 /* EventDetailViewController.swift in Sources */,
+				7666B49D2203DACC00885FE1 /* ViewController.swift in Sources */,
+				1A9E2D9D2248AB170057BDD1 /* UserEventViewController.swift in Sources */,
+				1A9E2D9B224343DE0057BDD1 /* AddNewPlayerViewController.swift in Sources */,
+				1AA93F662212128C009C642C /* RoomDetailsViewController.swift in Sources */,
+				1AC04E612212A0E1004D0BB3 /* RoomDetailPopUpViewController.swift in Sources */,
+				1A042A592226813900F00008 /* ChangeUserInfoViewController.swift in Sources */,
+				1A8216D422115E0E00FA0119 /* ChangeLocationPopUpViewController.swift in Sources */,
+				7666B49B2203DACC00885FE1 /* AppDelegate.swift in Sources */,
+				7639A8EF220959E8005A6E1B /* SignInVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7666B4A72203DACF00885FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7666B4B02203DACF00885FE1 /* EscapePassTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7666B4B22203DACF00885FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7666B4BB2203DACF00885FE1 /* EscapePassUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7666B4AD2203DACF00885FE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7666B4962203DACC00885FE1 /* EscapePass */;
+			targetProxy = 7666B4AC2203DACF00885FE1 /* PBXContainerItemProxy */;
+		};
+		7666B4B82203DACF00885FE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7666B4962203DACC00885FE1 /* EscapePass */;
+			targetProxy = 7666B4B72203DACF00885FE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7666B49E2203DACC00885FE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7666B49F2203DACC00885FE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7666B4A32203DACE00885FE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7666B4A42203DACE00885FE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7666B4BD2203DACF00885FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7666B4BE2203DACF00885FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7666B4C02203DACF00885FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA63DD759846833969B27F1 /* Pods-EscapePass.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQS5Q9ZGAD;
+				INFOPLIST_FILE = EscapePass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankarra.EscapePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7666B4C12203DACF00885FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A1CEA6DCCBBBB9675A8AB2 /* Pods-EscapePass.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQS5Q9ZGAD;
+				INFOPLIST_FILE = EscapePass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankarra.EscapePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7666B4C32203DACF00885FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03683E8815C5D56F59689F3 /* Pods-EscapePassTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQS5Q9ZGAD;
+				INFOPLIST_FILE = EscapePassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankarra.EscapePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EscapePass.app/EscapePass";
+			};
+			name = Debug;
+		};
+		7666B4C42203DACF00885FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB3170BF0CAFD8A2AA8EF65 /* Pods-EscapePassTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQS5Q9ZGAD;
+				INFOPLIST_FILE = EscapePassTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankarra.EscapePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EscapePass.app/EscapePass";
+			};
+			name = Release;
+		};
+		7666B4C62203DACF00885FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68032717D3BA5F9775C3E0C9 /* Pods-EscapePassUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQS5Q9ZGAD;
+				INFOPLIST_FILE = EscapePassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankarra.EscapePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EscapePass;
+			};
+			name = Debug;
+		};
+		7666B4C72203DACF00885FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64758A1C5523FF39823765F /* Pods-EscapePassUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZQS5Q9ZGAD;
+				INFOPLIST_FILE = EscapePassUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankarra.EscapePassUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EscapePass;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7666B4922203DACC00885FE1 /* Build configuration list for PBXProject "EscapePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7666B4BD2203DACF00885FE1 /* Debug */,
+				7666B4BE2203DACF00885FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7666B4BF2203DACF00885FE1 /* Build configuration list for PBXNativeTarget "EscapePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7666B4C02203DACF00885FE1 /* Debug */,
+				7666B4C12203DACF00885FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7666B4C22203DACF00885FE1 /* Build configuration list for PBXNativeTarget "EscapePassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7666B4C32203DACF00885FE1 /* Debug */,
+				7666B4C42203DACF00885FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7666B4C52203DACF00885FE1 /* Build configuration list for PBXNativeTarget "EscapePassUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7666B4C62203DACF00885FE1 /* Debug */,
+				7666B4C72203DACF00885FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7666B48F2203DACC00885FE1 /* Project object */;
+}

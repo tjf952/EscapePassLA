@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="icon" href="_images/icon.png">
+    <script src="md5.min.js"></script>
+
+    <style>
+        body,
+        html {
+            font-family: "Special Elite";
+            color: silver;
+            overflow: auto;
+        }
+
+        .bd-placeholder-img {
+            text-anchor: middle;
+            font-size: 1.125rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+    </style>
+    <script>
+        function back() {
+            location.href = "admin.html";
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <button class="btn btn-secondary" style="float: left;" onclick="back();">
+            Back To Admin Page
+        </button>
+
+        <form class="form-signin" onsubmit="return check();" method="POST">
+            <div class="text-center mb-4">
+                <img class="mb-4" src="_images/escape.png" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal"> Create an Admin</h1>
+                <div id="error" style="color:red"></div>
+            </div>
+            <div class="form-label-group">
+                <input type="text" id="Username" class="form-control" placeholder="Username" required autofocus>
+                <label for="inputEmail">Username</label>
+            </div>
+            <div class="form-label-group">
+                <input type="password" id="Password" class="form-control" placeholder="Password" required auto>
+                <label for="inputPassword">Password</label>
+            </div>
+            <div class="form-label-group">
+                <input type="password" id="Password2" class="form-control" placeholder="Password" required auto>
+                <label for="inputPassword">Re-enter Password</label>
+            </div>
+
+            <input class="btn btn-lg btn-secondary btn-block" type="submit" value="Add"><br>
+        </form>
+
+        <p class="mt-5 mb-3 text-muted text-center">Our password policy:</p>
+        <ul class="text-center">
+            <li>Be at least 12 characters</li>
+            <li>Use of lowercase and uppercase characters</li>
+            <li>have at least one number</li>
+            <li>Have at least one special characters(!, %, _, -, $, %, @, #)</li>
+            <li>no dictionary word</li>
+        </ul>
+
+
+        <p class="mt-5 mb-3 text-muted text-center">USC &copy; 2019</p>
+
+    </div> <!-- .container -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+
+    <!-- FIREBASE CODE -->
+    <script type="text/javascript">
+        var config = {
+          apiKey: "AIzaSyBGam4HqixZsebrBLWHMskGPuWgRFnVHgA",
+          authDomain: "escapepaa.firebaseapp.com",
+          databaseURL: "https://escapepaa.firebaseio.com",
+          projectId: "escapepaa",
+          storageBucket: "escapepaa.appspot.com",
+          messagingSenderId: "540745296849"
+        };
+        firebase.initializeApp(config);
+        // const firebase = require("firebase");
+        // // Required for side-effects
+        // require("firebase/firestore");
+        var db = firebase.firestore();
+
+        function check() {
+
+
+            var username = document.querySelector("#Username").value;
+            var pass = document.querySelector("#Password").value;
+            var pass2 = document.querySelector("#Password2").value;
+
+            //checks that the pass length is at least 12
+            if (pass.trim().length < 12) {
+                document.querySelector("#error").innerHTML = "<strong><div style=\" color:red;\" id=\"error\">Password needs to be at least 12 characters!</div></strong><br>";
+                return false;
+            }
+
+            //check for spaces
+            if (pass.length != pass.trim().length) {
+                document.querySelector("#error").innerHTML = "<strong><div style=\"color:red;\" id=\"error\">Password cannot contain spaces!</div></strong><br>";
+                return false;
+            }
+
+            //check if the passwords are the same
+            if (pass != pass2) {
+                document.querySelector("#error").innerHTML = "<strong><div style=\"color:red;\" id=\"error\">Password and Re-enter Passwords are not the same!</div></strong><br>";
+                return false;
+            }
+
+
+            //check that the password has a number
+            if (!(/\d/.test(pass))) {
+                document.querySelector("#error").innerHTML = "<strong><div style=\"color:red;\" id=\"error\">Password needs to contain at least one number!</div></strong><br>";
+                return false;
+            }
+
+            //checks at least one capital
+            if (pass.toLowerCase() == pass || pass.toUpperCase() == pass) {
+                document.querySelector("#error").innerHTML = "<strong><div style=\"color:red;\" id=\"error\">Password needs to have a mix of lower and upper case characters!</div></strong><br>";
+                return false;
+            }
+
+            var special = false;
+            //at least one special character
+            for (var i in pass) {
+                if (!pass[i].match(/[a-z]/i) &&
+                    !pass[i].match(/[0-9]/)) {
+                    special = true;
+                    break;
+                }
+            }
+
+            if (!special) {
+                document.querySelector("#error").innerHTML = "<strong><div style=\"color:red;\" id=\"error\">Password needs to contain special characters!</div></strong><br>";
+                return false;
+            }
+
+
+
+            hash = md5(pass);
+            db.collection("users").where("username", "==", username)
+                .get()
+                .then(function(querySnapshot) {
+                    if (querySnapshot.size == 0) {
+                        db.collection("users").add({
+                                email: username + "@placeholder.com",
+                                password: hash,
+                                username: document.getElementById("Username").value
+                            })
+                            .then(function(docRef) {
+                                console.log("Document written with ID: ", docRef.id);
+                            })
+                            .catch(function(error) {
+                                console.error("Error adding document: ", error);
+                            });
+                        document.querySelector("#error").innerHTML = "Success!";
+                        //location.href = "index.html";
+                    } else {
+                        document.querySelector("#error").innerHTML = "Username has been registered!";
+                    }
+                    return;
+                })
+                .catch(function(error) {
+                    console.log("Error getting documents: ", error);
+                });
+
+            return false;
+        }
+
+    </script>
+
+</body>
+
+</html>
